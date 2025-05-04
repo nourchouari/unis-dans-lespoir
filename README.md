@@ -1,5 +1,5 @@
 # 🌿 Unis dans l’Espoir – Site Web Officiel  
-**Créé avec cœur par Nour Chouhari**
+**Créé avec cœur par Nour Chouari**
 
 Bienvenue sur le dépôt du **site officiel** de l’association **Unis dans l’Espoir**, une initiative solidaire qui tend la main à celles et ceux qui en ont besoin.
 
