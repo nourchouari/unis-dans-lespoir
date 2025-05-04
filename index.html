@@ -126,10 +126,21 @@
     <p>Nour CHOUARI &copy; 2025 -Tous droits réservés.</p>
 </footer>
     <script>
-        // Script pour activer/désactiver le menu latéral mobile
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.mobile-nav').classList.toggle('active');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileLinks = document.querySelectorAll('.mobile-nav a');
+
+    // Ouvre/Ferme le menu mobile quand on clique sur l'icône
+    menuToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+    });
+
+    // Ferme le menu mobile quand on clique sur un lien
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
         });
-    </script>
+    });
+</script>
 </body>
 </html>
