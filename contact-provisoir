@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unis dans l'Espoir</title>
+    <link rel="stylesheet" href="style-site.css">
+
+</head>
+<body>
+    <header>
+        <h1>Unis dans l'Espoir</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="index.html#apropos">À propos de nous</a></li>
+                <li><a href="index.html#projets">Nos projets passés</a></li>
+                <li><a href="index.html#aider">Comment nous aider</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="contact">
+        <h3>En cours de maintenance 🛠️</h3>
+        <hr>
+        <h4>En attendant, on se retrouve sur nos réseaux sociaux !</h4>
+    <div id="box1" class="box">
+        <a href="https://nourchouari.github.io/unisdanslespoir-choix/">
+        <img src="reseaux-sociaux.png" alt="">
+        <h3>SUIVEZ NOUS</h3>
+    </a>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="contact-container">
+        </button><a href="#" class="contact-button">Haut de page</a>
+    </div>
+    <p> UNIS DANS L'ESPOIR | Nour CHOUARI &copy; 2025 -Tous droits réservés.</p>
+</footer>
+</body>
+</html>
