@@ -18,6 +18,31 @@ main {
     display: none;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
 /* ====== HEADER ====== */
 header {
     position: relative;
@@ -246,3 +271,36 @@ footer {
     display: none; /* cachée par défaut (grand écran) */
 }
 
+/* Affiche le menu desktop uniquement sur grand écran */
+@media (min-width: 769px) {
+    .desktop-nav {
+        display: block;
+    }
+
+    .mobile-nav,
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Sur mobile : active le bouton hamburger et ajuste la section projets */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    section#projets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}
