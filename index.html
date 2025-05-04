@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,7 +15,7 @@
   </div>
   <div class="titre-nav-container">
     <h1 class="titre-site">Unis dans l’espoir</h1>
-    <nav class="nav">
+    <nav class="nav desktop-nav">
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos de nous</a></li>
@@ -29,7 +30,7 @@
 
     </header>
     <!-- Menu latéral mobile -->
-    <nav class="mobile-nav">
+    <nav class="mobile-nav" id="mobile-nav">
         <ul>
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#apropos">À propos de nous</a></li>
@@ -125,11 +126,21 @@
     <p>UNIS DANS L'ESPOIR</p>
     <p>Nour CHOUARI &copy; 2025 -Tous droits réservés.</p>
 </footer>
-   <script>
-        // Script pour activer/désactiver le menu latéral mobile
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('.mobile-nav').classList.toggle('active');
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const mobileLinks = mobileNav.querySelectorAll("a");
+
+    toggle.addEventListener("click", () => {
+        mobileNav.classList.toggle("active");
+    });
+
+    mobileLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileNav.classList.remove("active");
         });
-    </script>
+    });
+</script>
+
 </body>
 </html>
