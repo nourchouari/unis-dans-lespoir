@@ -130,6 +130,14 @@ section {
     color: #333;
 }
 
+#apropos p,
+#apropos li {
+    text-align: justify;
+}
+
+#apropos ul {
+    padding-left: 1.2rem; /* ajoute un peu d'indentation à la liste */
+}
 /* ====== BOXES ====== */
 /* Structure des containers de box */
 .boxes {
