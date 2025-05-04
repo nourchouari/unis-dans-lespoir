@@ -138,6 +138,8 @@ section {
 #apropos ul {
     padding-left: 1.2rem; /* ajoute un peu d'indentation à la liste */
 }
+
+
 /* ====== BOXES ====== */
 /* Structure des containers de box */
 .boxes {
@@ -343,3 +345,17 @@ footer {
         margin-bottom: 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .contact-container {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .contact-button {
+        padding: 12px 24px; /* Ajuste la taille du bouton */
+        font-size: 1rem;    /* Ajuste la taille du texte */
+    }
+}
+
